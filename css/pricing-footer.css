@@ -1,0 +1,42 @@
+/* Custom styling for pricing footer sections */
+.pricing-footer p.transition-3s {
+    display: none;  /* Hide the "Save 20 USD" text */
+}
+
+.pricing-footer::before {
+    content: "";
+    display: block;
+    margin: 15px auto;
+}
+
+/* Basic plan styling - match header price */
+.single-price-table.one .pricing-footer::before {
+    content: "R$20 /Mês";
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Standard plan styling */
+.single-price-table.two .pricing-footer::before {
+    content: "R$39 /Mês";
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Premium plan styling */
+.single-price-table.three .pricing-footer::before {
+    content: "R$79 /Mês";
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Unlimited plan styling */
+.single-price-table.four .pricing-footer::before {
+    content: "R$199 /Mês";
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}

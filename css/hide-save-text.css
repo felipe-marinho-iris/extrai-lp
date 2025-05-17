@@ -1,0 +1,18 @@
+/* Ocultar o texto "Save 20 USD" */
+.pricing-footer p.transition-3s {
+    display: none;
+}
+
+/* Remover o estilo específico da div pricing-footer */
+.pricing-footer.transition-3s {
+    background: transparent;
+    border: none;
+    margin-top: 20px;
+    padding: 0;
+}
+
+/* Estilo consistente para todos os botões */
+.btn-dynamic {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}

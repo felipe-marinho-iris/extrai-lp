@@ -1,0 +1,29 @@
+/* CSS para reduzir espaçamento do rodapé */
+#footer-area {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#footer-area .social {
+    margin-bottom: 10px;
+}
+
+#footer-area .social li {
+    margin: 0 5px;
+}
+
+#footer-area .copyright {
+    margin-top: 5px;
+}
+
+/* Responsividade */
+@media (max-width: 767px) {
+    #footer-area {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    
+    #footer-area .social {
+        margin-bottom: 5px;
+    }
+}

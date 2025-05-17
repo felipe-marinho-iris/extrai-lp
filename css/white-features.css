@@ -1,0 +1,7 @@
+/* White text for the FUNCIONALIDADES INCRÍVEIS section */
+#awesome-features-area h2,
+#awesome-features-area .section-heading p,
+#awesome-features-area .awesome-feature h5,
+#awesome-features-area .asesome-feature-details p {
+    color: #ffffff !important;
+}

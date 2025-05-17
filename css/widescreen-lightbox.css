@@ -1,0 +1,59 @@
+/* Estilo para o lightbox na proporção 16:9 */
+.widescreen-lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: none;
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox-content {
+  position: relative;
+  width: 80%;
+  height: 0;
+  padding-bottom: 45%; /* 16:9 (9/16 = 0.5625) mas um pouco menor para permitir espaço para controles */
+}
+
+.lightbox-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.close-lightbox {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 10000;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-lightbox:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .lightbox-content {
+    width: 95%;
+    padding-bottom: 53.44%; /* Mantém 16:9 com mais espaço para margem */
+  }
+}

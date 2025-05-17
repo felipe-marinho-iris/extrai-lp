@@ -1,0 +1,5 @@
+/* White text for the TABELA DE PREÇOS section */
+#pricing-table-area h2,
+#pricing-table-area .section-heading p {
+    color: #ffffff !important;
+}

@@ -1,0 +1,75 @@
+/* Botões dinâmicos para a seção de preços */
+.btn-dynamic {
+    background: #2C9E5B;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    box-shadow: 0 4px 15px rgba(44, 158, 91, 0.3);
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-dynamic:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: #24804a;
+    transition: all 0.4s ease-out;
+    z-index: -1;
+    border-radius: 30px;
+}
+
+.btn-dynamic:hover {
+    color: white;
+    box-shadow: 0 7px 20px rgba(44, 158, 91, 0.5);
+    transform: translateY(-3px);
+    text-decoration: none;
+}
+
+.btn-dynamic:hover:before {
+    left: 0;
+}
+
+.btn-dynamic:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 8px rgba(44, 158, 91, 0.3);
+}
+
+/* Todos os botões usam a mesma cor verde */
+.single-price-table .btn-dynamic {
+    background: #2C9E5B;
+    box-shadow: 0 4px 15px rgba(44, 158, 91, 0.3);
+}
+
+.single-price-table .btn-dynamic:before {
+    background: #24804a;
+}
+
+/* Animação pulsante para atrair atenção */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(44, 158, 91, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(44, 158, 91, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(44, 158, 91, 0);
+    }
+}
+
+.single-price-table:hover .btn-dynamic {
+    animation: pulse 1.5s infinite;
+}
