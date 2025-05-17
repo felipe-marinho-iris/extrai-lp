@@ -1,12 +1,5 @@
 /* ================================================
-Template Name: APPAI 
-Description: Creative App Landing HTML5 Template
-Template URI: https://themeforest.net/item/appai-creative-app-landing-html5-template/19533013
-Author: Marvel_Theme
-Author URI: https://themeforest.net/user/marvel_theme
-Version: 1.3 (18 March 2018)
 
-=== CSS INDEX ===
 1. THEME DEFAULT CSS
     1.1. TRANSITION
 ======================================== */
@@ -2655,11 +2648,17 @@ header {
 /* =====================================
 19. FOOTER AREA
 ===================================== */
-
+/*
 #footer-area {
     background-color: #2b323f;
     padding-bottom: 45px;
     padding-top: 23em;
+}*/
+
+#footer-area {
+    background-color: #046249;
+    padding-bottom: 15px;
+    padding-top: 1em;
 }
 
 #footer-area .social {
@@ -2673,7 +2672,7 @@ header {
 }
 
 .copyright a {
-    color: #7800fc;
+    color: #c1f500;
 }
 
 
@@ -3352,9 +3351,15 @@ header {
     top: 120px;
 }
 
+/*
 #slider-area.home-style-3 .slider-text {
     padding-bottom: 19em;
     padding-top: 15em;
+} */
+
+#slider-area.home-style-3 .slider-text {
+    padding-bottom: 29em;
+    padding-top: 12em;
 }
 
 .single-usage {
@@ -3444,8 +3449,10 @@ header {
     left: 0;
     position: absolute;
     top: 0;
-    -webkit-transform: skewY(170deg);
-    transform: skewY(170deg);
+    /*-webkit-transform: skewY(170deg);
+    transform: skewY(170deg);*/
+    -webkit-transform: skewY(180deg);
+    transform: skewY(180deg);
     width: 100%;
     z-index: 0;
 }
@@ -3455,8 +3462,10 @@ header {
 }
 
 .home-style-3:after {
-    -webkit-transform: skewY(170deg);
-    transform: skewY(170deg);
+    /*-webkit-transform: skewY(170deg);
+    transform: skewY(170deg);*/
+    -webkit-transform: skewY(180deg);
+    transform: skewY(180deg);
 }
 
 #slider-area.home-style-3:before {
