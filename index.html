@@ -58,6 +58,7 @@
                             <li><a href="#app-screenshot-area">Telas</a></li>
                             <li><a href="#pricing-table-area">Planos</a></li>
                             <li><a href="#faq-area">FAQs</a></li>
+                            <li><a href="#contato">Contato</a></li>
                         </ul>
                     </div>
                 </div>
@@ -510,7 +511,6 @@
                                 <div class="member-description-inner">
                                     <h3 class="member-name">MAICON OLIVEIRA</h3>
                                     <p class="designation">Publicitário</p>
-                                    <p class="short-description">Lorem ipsum dolor sit amet, secte tur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                                     <ul class="social list-inline">
                                         <li><a href="#"><i class="icofont icofont-social-facebook"></i></a></li>
                                         <li><a href="#"><i class="icofont icofont-social-linkedin"></i></a></li>
@@ -528,7 +528,6 @@
                                 <div class="member-description-inner">
                                     <h3 class="member-name">DR. FELIPE</h3>
                                     <p class="designation">Médico</p>
-                                    <p class="short-description">Lorem ipsum dolor sit amet, secte tur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                                     <ul class="social list-inline">
                                         <li><a href="#"><i class="icofont icofont-social-facebook"></i></a></li>
                                         <li><a href="#"><i class="icofont icofont-social-linkedin"></i></a></li>
@@ -546,7 +545,6 @@
                                 <div class="member-description-inner">
                                     <h3 class="member-name">ALAN NICOLAS</h3>
                                     <p class="designation">Professor</p>
-                                    <p class="short-description">Lorem ipsum dolor sit amet, secte tur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                                     <ul class="social list-inline">
                                         <li><a href="#"><i class="icofont icofont-social-facebook"></i></a></li>
                                         <li><a href="#"><i class="icofont icofont-social-linkedin"></i></a></li>
@@ -564,7 +562,6 @@
                                 <div class="member-description-inner">
                                     <h3>CARLOS EDUARDO</h3>
                                     <p class="designation">Programador</p>
-                                    <p class="short-description">Lorem ipsum dolor sit amet, secte tur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                                     <ul class="social list-inline">
                                         <li><a href="#"><i class="icofont icofont-social-facebook"></i></a></li>
                                         <li><a href="#"><i class="icofont icofont-social-linkedin"></i></a></li>
@@ -697,18 +694,60 @@
                 </div>
             </div>
         </section>
-        <!-- frequently asked questions area end -->
-        <!-- contact area start -->
-       
-        <!-- map area end -->
-        <!-- footer area start -->
+
+
+<section id="contato" class="home-style-3 ptb-150">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="section-heading text-center">
+                    <img src="img/extrAi.webp" />
+                    <h2>FALE CONOSCO</h2>
+                    <p>Preencha o formulario com as informações abaixo.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row content-center">
+            <div class="col-sm-12 col-md-8 hidden-sm p-0 wow fadeIn col-md-offset-2" data-wow-duration="2s" style="visibility: visible; animation-duration: 2s; animation-name: fadeIn;">
+                <div class="get-in-touch p-50">
+                    <form id="form-whatsapp">
+                        <div class="form-group">
+                            <input type="text" name="nome" class="form-control" placeholder="Nome*" required />
+                            <div class="form-grad-border"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" class="form-control" placeholder="E-mail*" required />
+                            <div class="form-grad-border"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" maxlength="15" onkeyup="handlePhone(event)" name="telefone" class="form-control" placeholder="Telefone*" required />
+                            <div class="form-grad-border"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="mensagem" class="form-control" rows="3" placeholder="Mensagem*" required></textarea>
+                            <div class="form-grad-border"></div>
+                        </div>
+                        <button type="submit" class="btn">ENVIAR</button>
+                        <p class="appai-form-send-message"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
         <footer id="footer-area">
             <div class="container">
                 <ul class="social list-inline text-center">
                     <li><a href="#"><i class="icofont icofont-social-facebook"></i></a></li>
                     <li><a href="#"><i class="icofont icofont-social-linkedin"></i></a></li>
                     <li><a href="#"><i class="icofont icofont-social-twitter"></i></a></li>
-                    <li><a href="#"><i class="icofont icofont-social-instagram"></i></a></li>
+                    <li><a href="https://www.instagram.com/extrai.ai/" target="_blank"><i class="icofont icofont-social-instagram"></i></a></li>
                 </ul>
                 <div class="copyright text-center">
                     <p>Copyright @ 2025 <a href="#">ExtrAi</a> todos os direitos reservados.</p>
@@ -720,6 +759,54 @@
     <!-- page wrapper end -->
     <!-- All Js files-->
     <script src="js/vendor/jquery-1.12.4.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+  <script>
+    const handlePhone = (event) => {
+      let input = event.target
+      input.value = phoneMask(input.value)
+    }
+
+    const phoneMask = (value) => {
+      if (!value) return ""
+      value = value.replace(/\D/g,'')
+      value = value.replace(/(\d{2})(\d)/,"($1) $2")
+      value = value.replace(/(\d)(\d{4})$/,"$1-$2")
+      return value
+    }
+  </script>  
+
+<script>
+$(document).ready(function() {
+    // Aplica a máscara (00) 00000-0000
+
+    $('#form-whatsapp').on('submit', function(e) {
+        e.preventDefault();
+
+        const nome = $('input[name="nome"]').val().trim();
+        const email = $('input[name="email"]').val().trim();
+        const telefone = $('input[name="telefone"]').val().trim();
+        const mensagem = $('textarea[name="mensagem"]').val().trim();
+
+        if (!nome || !email || !telefone || !mensagem) {
+            alert('Por favor, preencha todos os campos.');
+            return;
+        }
+
+        // Adiciona +55 à frente do telefone já formatado
+        const telefoneFormatado = `+55 ${telefone}`;
+
+        const texto = `*ExtrAi - Contato Recebido:*\n\n👤 *Nome:* ${nome}\n📧 *Email:* ${email}\n📱 *Telefone:* ${telefoneFormatado}\n📝 *Mensagem:* ${mensagem}`;
+
+        // Número fixo para onde será enviada a mensagem (sem espaços ou símbolos)
+        const numeroDestino = '556199924433'; // +55 61 99924-4433
+
+        const url = `https://wa.me/${numeroDestino}?text=${encodeURIComponent(texto)}`;
+        window.open(url, '_blank');
+    });
+});
+</script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/parallax-mouse-effect.js"></script>
     <script src="js/slick.min.js"></script>
