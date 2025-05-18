@@ -727,8 +727,13 @@
         padding-bottom: 27em;
         padding-top: 17em;
     }
+    /*
     #slider-area.home-style-3 .slider-text {
         padding-bottom: 19em;
+        padding-top: 19em;
+    }*/
+    #slider-area.home-style-3 .slider-text {
+        padding-bottom: 30em;
         padding-top: 19em;
     }
     .testimonial-slider-2 .slide {
